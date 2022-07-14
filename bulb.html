@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Light Bulb App</title>
+
+   
+</head>
+  
+<body> 
+    <div class="card-body">
+        <div class="card-header">
+            <div class="card-title">
+                <h1 style="font-size:50px" text-align="center">LIGHT BULB</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="text-align:center" id="app">
+        <img v-if="isOn" src="/images/bulb.jpg" width="300" height="400" alt="Bulb On" />
+        <img v-else src="./images/bulb3.png" width="350" height="400" alt="Bulb Off" />
+        <button style="margin:0px" class="btn-lg btn-warning" v-on:click="toggleBulb(isOn)"><h4>Switch</h4></button>
+  
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="scripts.js"></script>
+    </div>
+    
+    <script src="../../scripts/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="/scripts/vue.js"></script>
+    <script src="script.js"></script>
+</body> 
+  
+</html> 
+</html>
